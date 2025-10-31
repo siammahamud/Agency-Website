@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --color-primary: #E63946;
+  --color-secondary: #1d3557;
+  --color-bg: #f8f9fa;
+  --color-text: #111827;
+}
+/* @layer base {
+  html {
+    font-family: var(--font-poppins);
+  }
+} */
