@@ -15,7 +15,7 @@ const HeroSection = () => {
               Our Code
             </span>
           </h1>
-          <p className="text-lg text-gray-700 mb-8">
+          <p className="text-md lg:text-lg text-gray-700 mb-8">
             From sleek portfolios to powerful business sites — we bring your
             ideas to life with clean design and modern technology.
           </p>
