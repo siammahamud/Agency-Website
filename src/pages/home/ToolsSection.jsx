@@ -3,6 +3,7 @@ import { PiGearFill } from "react-icons/pi";
 import { FaCode } from "react-icons/fa";
 import { FiSmartphone } from "react-icons/fi";
 import { IoMdCloudOutline } from "react-icons/io";
+import HeadingSection from "../../components/HeadingSection";
 const ToolsSection = () => {
   const tools = [
     {
@@ -30,14 +31,10 @@ const ToolsSection = () => {
   return (
     <div className="max-w-screen-2xl px-5 py-20 mx-auto">
       {/* heading  */}
-      <div className="text-center mb-20">
-        <p className="font-semibold text-lg lg:text-xl text-primary-clr my-3">
-          The tools you need
-        </p>
-        <h1 className="text-3xl  lg:text-4xl font-bold text-gray-800 mb-10">
-          All-in-One Solution For Your Projects
-        </h1>
-      </div>
+      <HeadingSection
+        subheading={"The tools you need"}
+        heading={"All-in-One Solution For Your Projects"}
+      />
       {/* tools grid  */}
       <div className="card-grid-layout mb-20">
         {tools.map((tool, index) => (
