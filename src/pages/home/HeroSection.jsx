@@ -11,7 +11,7 @@ const HeroSection = () => {
         <div className="lg:w-1/2 text-center lg:text-left">
           <h1 class="text-2xl sm:text-3xl lg:text-5xl font-extrabold tracking-tight leading-[1.02] mb-6">
             <span>Your Vision </span>
-            <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-blue-600">
+            <span class="bg-clip-text text-transparent bg-linear-to-r from-primary-clr to-red-400">
               Our Code
             </span>
           </h1>
@@ -20,11 +20,11 @@ const HeroSection = () => {
             ideas to life with clean design and modern technology.
           </p>
           <div className="flex gap-4 justify-center lg:justify-start">
-            <button className="flex gap-2 bg-primary hover:bg-blue-800 items-center text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <button className="cursor-pointer flex gap-2 bg-primary-clr hover:bg-priamary-clr-dark items-center text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
               <span>Get Started</span>
               <FiArrowRight />
             </button>
-            <button className="border-2 font-semibold border-blue-600 rounded-md text-primary hover:text-white hover:bg-primary ml-2 px-6 py-2 transition duration-300">
+            <button className="cursor-pointer border-2 font-semibold border-primary-clr rounded-md text-primary-clr hover:bg-primary-clr hover:text-white ml-2 px-6 py-2 transition duration-300">
               Contact Us
             </button>
           </div>
@@ -38,7 +38,7 @@ const HeroSection = () => {
               className="group-hover:opacity-70 transition duration-300"
             />
             <button className="absolute inset-0 flex justify-center items-center rounded-full ">
-              <FaRegPlayCircle className="text-primary text-6xl cursor-pointer" />
+              <FaRegPlayCircle className="text-priamary-clr-dark text-6xl cursor-pointer" />
             </button>
           </div>
         </div>

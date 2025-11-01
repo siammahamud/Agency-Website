@@ -2,7 +2,8 @@
 @plugin "daisyui";
 
 @theme {
-  --color-primary: #E63946;
+  --color-primary-clr: #e63946;
+  --color-priamary-clr-dark: #c72e3a;
   --color-secondary: #1d3557;
   --color-bg: #f8f9fa;
   --color-text: #111827;
@@ -12,3 +13,9 @@
     font-family: var(--font-poppins);
   }
 } */
+
+@layer utilities {
+  .card-grid-layout {
+    @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4  gap-8;
+  }
+}

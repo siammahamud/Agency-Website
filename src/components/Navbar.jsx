@@ -58,13 +58,13 @@ const Navbar = () => {
             </ul>
           </div>
           <Link to="/" className="btn btn-ghost text-xl">
-            <span class="text-3xl font-extrabold tracking-tight text-primary">
+            <span class="text-3xl font-extrabold tracking-tight text-primary-clr">
               Web<span class="text-gray-800">Loom</span>
             </span>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 font-semibold text-lg">
             <li>
               <Link to="/">Home</Link>
             </li>
@@ -77,7 +77,7 @@ const Navbar = () => {
             <li>
               <details>
                 <summary>Categories</summary>
-                <ul className="p-2 text-sm divide-y diveide-gray-700">
+                <ul className="p-2 text-sm divide-y diveide-gray-700 z-50">
                   <li>
                     <Link to="/">Web-Design</Link>
                   </li>
@@ -95,16 +95,17 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+        {/* buttons  */}
         <div className="navbar-end ">
           <Link
             to="/login"
-            className=" btn btn-outline btn-secondary hidden sm:flex mr-2 ouline-1-[#E63946]"
+            className=" btn btn-outline border-2 border-primary-clr hover:bg-primary-clr hover:text-white hidden sm:flex mr-2"
           >
             Log In
           </Link>
           <Link
             to="/pricing"
-            className=" btn btn-active btn-secondary hidden sm:flex bg-primary"
+            className=" btn btn-active hidden text-white sm:flex bg-primary-clr hover:bg-priamary-clr-dark"
           >
             Start Free Trial
           </Link>
