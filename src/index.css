@@ -16,7 +16,7 @@
 
 @layer utilities {
   .card-grid-layout {
-    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-8 justify-center;
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4  gap-8 justify-center items-center;
   }
   .section-container {
     @apply max-w-screen-2xl mx-auto px-4 py-20;

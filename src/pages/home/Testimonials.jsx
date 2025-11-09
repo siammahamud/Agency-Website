@@ -138,7 +138,7 @@ const Testimonials = () => {
             {pages.map((page, pi) => (
               <div key={pi} className="min-w-full px-2">
                 {/* inner grid for cards: responsive, 4 per row on large screens */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="card-grid-layout gap-10">
                   {page.map((r) => (
                     <div
                       key={r.id}
@@ -162,7 +162,7 @@ const Testimonials = () => {
                       </h3>
                       <p className="text-sm text-gray-500">{r.role}</p>
 
-                      {/* Optional Star Rating */}
+                      {/* Star Rating */}
                       <div className="flex mt-3 space-x-1">
                         {Array.from({ length: 5 }).map((_, i) => (
                           <svg
