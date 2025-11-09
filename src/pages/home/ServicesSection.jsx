@@ -52,11 +52,11 @@ const ServicesSection = () => {
 
         {/* services card grid  */}
 
-        <div className="grid grid-cols-1 lg:grid-cols-2  gap-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2  gap-16 mb-20">
           {services.map((service, i) => (
             <div
               key={i}
-              className="flex flex-col items-center shadow-lg py-8 px-4 md:px-6 text-center rounded-lg hover:shadow-3xl hover:shadow-primary-clr transition-shadow duration-300"
+              className="flex flex-col items-center shadow-lg py-8 px-6 md:px-10 text-center rounded-lg hover:shadow-3xl hover:shadow-primary-clr transition-shadow duration-300"
             >
               <service.icon className="text-4xl text-primary-clr mb-6" />
               <p className="text-gray-600 text-justify">
@@ -64,6 +64,12 @@ const ServicesSection = () => {
               </p>
             </div>
           ))}
+        </div>
+        {/* button  */}
+        <div className="mb-20">
+          <button className="bg-primary-clr font-semibold hover:bg-priamary-clr-dark text-white px-6 py-3 rounded-lg hover:bg-primary-clr-dark transition-colors duration-300 mx-auto block">
+            Explore More
+          </button>
         </div>
       </div>
     </div>
